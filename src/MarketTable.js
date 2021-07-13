@@ -1,5 +1,6 @@
 import React from 'react'
 import MarketItem from './MarketItem'
+import './MarketTable.css'
 
 function MarketTable(props) {
   return (
