@@ -5,12 +5,14 @@ import Footer from './Footer'
 import './App.css';
 ;
 
+const testItems = [];
+
 function App() {
   return (
     <div>
       <Header />
       <Generate />
-      <Category />
+      <Category items={testItems}/>
       <Footer />
     </div>
   );
