@@ -1,5 +1,24 @@
-import logo from './logo.svg';
+import Header from './Header';
+import Generate from './Generate';
+import Category from './Category';
+import Footer from './Footer'
 import './App.css';
+;
+
+const testItems = [
+  { name: 'Cheeseburger', price: 100 },
+  { name: 'Fries', price: 50 },
+  { name: 'Salad', price: 90 },
+  { name: 'Coke', price: 60 },
+  { name: 'Bhagyashree\'s Special', price: 120 },
+  { name: 'Ivan\'s Special', price: 80 },
+  { name: 'Jose\s Special', price: 100 },
+];
+
+const testItems1 = [...testItems].reduce((acc, a) => Math.random() > 0.5 ? [...acc, a] : [a, ...acc], []);
+const testItems2 = [...testItems].reduce((acc, a) => Math.random() > 0.5 ? [...acc, a] : [a, ...acc], []);
+
+console.table(testItems2);
 
 function App() {
 
@@ -18,21 +37,11 @@ function App() {
   getRandom(100);
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Testing
-        </a>
-      </header>
+    <div>
+      <Header />
+      <Generate />
+      <Category cat1_items={testItems1} cat2_items={testItems2}/>
+      <Footer />
     </div>
   );
 }
