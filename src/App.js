@@ -13,16 +13,14 @@ function App() {
     return Math.floor((Math.random() * number) +1);
   }
 
-  const categoriesChanged = nCategories => {
-    setItems(categorySelector(nCategories));
-  }
+  const categoriesChanged = (nCategories, nItems) => setItems(categorySelector(nCategories, nItems));
 
   getRandom(100);
 
   return (
     <div>
       <Header />
-      <Generate catChangedFunc={categoriesChanged} />
+      <Generate paramsChangedFunc={categoriesChanged} />
       <Category items={items} />
       <Footer />
     </div>
