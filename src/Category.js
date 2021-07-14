@@ -5,7 +5,7 @@ import { Table } from 'react-bootstrap';
 
 export default function Category(props) {
     return (
-    <div responsive>
+    <div className="table_div" responsive="true">
         {props.items.map(item => (
           <div>
             <h4>{item.categoryTitle}</h4>

@@ -34,8 +34,8 @@ Header {
 }
 
 .table_div {
-  border: 1px solid #4287f5;
-  width: 80%;
+  /* border: 1px solid #4287f5; */
+  width: 100%;
   margin: 2rem auto;
   display: flex;
   flex-direction: row;
