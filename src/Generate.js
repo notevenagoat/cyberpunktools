@@ -1,14 +1,15 @@
 import React from 'react';
+import { Button } from 'react-bootstrap';
 
 
 export default function Generate() {
     return (
         <section className="generate">
             <div>
-                <button>Generate</button>
+                <Button variant="info">Generate</Button>
             </div>
             <div className="generate_sets">
-                <label for="total_price">Set Total Price </label>
+                <label for="total_price" variant="success">Set Total Price </label>
                 <input name="total_price" id="total_price"></input>
                 <label for="categories">Set Categories </label>
                 <input name="total_price" id="categories"></input>

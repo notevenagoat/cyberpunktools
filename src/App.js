@@ -1,9 +1,10 @@
 import Header from './Header';
 import Generate from './Generate';
 import Category from './Category';
-import Footer from './Footer'
-import './App.css';
-;
+import Footer from './Footer';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 
 const testItems = [
   { name: 'Cheeseburger', price: 100 },
@@ -40,7 +41,7 @@ function App() {
     <div>
       <Header />
       <Generate />
-      <Category cat1_items={newobject.nameofcat1} cat2_items={testItems2}/>
+      <Category cat1_items={testItems1} cat2_items={testItems2}/>
       <Footer />
     </div>
   );
