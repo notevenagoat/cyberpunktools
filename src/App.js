@@ -3,23 +3,24 @@ import Generate from './Generate';
 import Category from './Category';
 import Footer from './Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { categorySelector } from './randomgen';
 
+const testItems = categorySelector();
 
+// const testItems = [
+//   { name: 'Cheeseburger', price: 100 },
+//   { name: 'Fries', price: 50 },
+//   { name: 'Salad', price: 90 },
+//   { name: 'Coke', price: 60 },
+//   { name: 'Bhagyashree\'s Special', price: 120 },
+//   { name: 'Ivan\'s Special', price: 80 },
+//   { name: 'Jose\'s Special', price: 100 },
+// ];
 
-const testItems = [
-  { name: 'Cheeseburger', price: 100 },
-  { name: 'Fries', price: 50 },
-  { name: 'Salad', price: 90 },
-  { name: 'Coke', price: 60 },
-  { name: 'Bhagyashree\'s Special', price: 120 },
-  { name: 'Ivan\'s Special', price: 80 },
-  { name: 'Jose\'s Special', price: 100 },
-];
+// const testItems1 = [...testItems].reduce((acc, a) => Math.random() > 0.5 ? [...acc, a] : [a, ...acc], []);
+// const testItems2 = [...testItems].reduce((acc, a) => Math.random() > 0.5 ? [...acc, a] : [a, ...acc], []);
 
-const testItems1 = [...testItems].reduce((acc, a) => Math.random() > 0.5 ? [...acc, a] : [a, ...acc], []);
-const testItems2 = [...testItems].reduce((acc, a) => Math.random() > 0.5 ? [...acc, a] : [a, ...acc], []);
-
-console.table(testItems2);
+// console.table(testItems2);
 
 function App() {
 
@@ -41,7 +42,7 @@ function App() {
     <div>
       <Header />
       <Generate />
-      <Category cat1_items={testItems1} cat2_items={testItems2}/>
+      <Category items={testItems} />
       <Footer />
     </div>
   );
