@@ -24,3 +24,5 @@ export const categorySelector = (quantity = 2) => {
     }
     return(randomCats);
 }
+
+console.table(categorySelector());
