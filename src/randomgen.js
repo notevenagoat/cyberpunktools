@@ -9,19 +9,18 @@ let randomtemp = [];
 
 export const categorySelector = (quantity = 2) => {
 //  .. randomCats becomes an array of 6 numbers in random order.
-    for (let i=0; i<categoryNames.length;i++){
+    for (let i=0; i<quantity;i++){
         let index = sixCats[(Math.floor(Math.random() * sixCats.length))];
         sixCats.splice(sixCats.indexOf(index), 1);
         randomtemp.push(index);
-        
+     
         let randomcat = {
-                id: randomtemp[i],
-                categoryTitle: categoryNames[randomtemp[i]],
-                list: marketCategories[randomtemp[i]],    
+                id: index-1,
+                categoryTitle: categoryNames[index-1],
+                list: marketCategories[index-1],    
             }
         randomCats.push(randomcat);
     
     }
-            console.log(randomCats);
     return(randomCats);
 }
