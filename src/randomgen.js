@@ -2,31 +2,26 @@ import { marketCategories } from "./components/cprmarketdata.js";
 
 
 const categoryNames= ['Weapons', 'Foods and Drugs', 'Cyberware', 'Electronics', 'Clothes', 'Surival'];
-// pick two categories and print them
-// for (let i=0; i< marketCategories.length ; i++){
-//  }
 
-const categorySelector = (quantity = 2) => {
-    let randomtemp = Math.floor(Math.random() * 6 +1);    
-    let randomtemp2 = Math.floor(Math.random() * 6 +1);
+let randomCats = [];
+let sixCats = [1,2,3,4,5,6];
+let randomtemp = [];
 
-    while (randomtemp2 === randomtemp ) {
-        randomtemp2 = Math.floor(Math.random() * 6 +1);
-
-    }
-
-    let twolists = [
-        {
-            category: categoryNames[randomtemp],
-            list: marketCategories[randomtemp],    
-        },
-        {
-            category: categoryNames[randomtemp2],
-            list: marketCategories[randomtemp2]   
-        },
-    ]   
+export const categorySelector = (quantity = 2) => {
+//  .. randomCats becomes an array of 6 numbers in random order.
+    for (let i=0; i<categoryNames.length;i++){
+        let index = sixCats[(Math.floor(Math.random() * sixCats.length))];
+        sixCats.splice(sixCats.indexOf(index), 1);
+        randomtemp.push(index);
+        
+        let randomcat = {
+                id: randomtemp[i],
+                categoryTitle: categoryNames[randomtemp[i]],
+                list: marketCategories[randomtemp[i]],    
+            }
+        randomCats.push(randomcat);
     
-    return(twolists);
+    }
+            console.log(randomCats);
+    return(randomCats);
 }
-
-console.log(categorySelector());
