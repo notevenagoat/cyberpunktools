@@ -12,7 +12,7 @@ const testItems = [
   { name: 'Coke', price: 60 },
   { name: 'Bhagyashree\'s Special', price: 120 },
   { name: 'Ivan\'s Special', price: 80 },
-  { name: 'Jose\s Special', price: 100 },
+  { name: 'Jose\'s Special', price: 100 },
 ];
 
 const testItems1 = [...testItems].reduce((acc, a) => Math.random() > 0.5 ? [...acc, a] : [a, ...acc], []);
