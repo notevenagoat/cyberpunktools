@@ -40,7 +40,7 @@ function App() {
     <div>
       <Header />
       <Generate />
-      <Category cat1_items={testItems1} cat2_items={testItems2}/>
+      <Category cat1_items={newobject.nameofcat1} cat2_items={testItems2}/>
       <Footer />
     </div>
   );
