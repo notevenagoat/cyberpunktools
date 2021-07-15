@@ -7,12 +7,11 @@ import { categorySelector } from './randomgen';
 import { useState } from 'react';
 
 function App() {
-  const [items, setItems] = useState(categorySelector(1));
+  const [items, setItems] = useState([]);
 
   const getRandom = (number) => {
     return Math.floor((Math.random() * number) +1);
   }
-
 
   const categoriesChanged = (nCategories, nItems) => setItems(categorySelector(nCategories, nItems));
 
