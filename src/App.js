@@ -7,7 +7,7 @@ import { categorySelector } from './randomgen';
 import { useState } from 'react';
 
 function App() {
-  const [items, setItems] = useState(categorySelector(1));
+  const [items, setItems] = useState([]);
 
   const getRandom = (number) => {
     return Math.floor((Math.random() * number) +1);
@@ -20,7 +20,7 @@ function App() {
   return (
     <div>
       <Header />
-      <Generate paramsChangedFunc={categoriesChanged} />
+      <Generate paramsChangedFunc={categoriesChanged} items={items} />
       <Category items={items} />
       <Footer />
     </div>
