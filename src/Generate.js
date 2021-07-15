@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Button } from 'react-bootstrap';
+import TotalPrice from './TotalPrice';
 
 
 const checkNumber = (input, min, max, setter, _default) => {
@@ -15,11 +16,9 @@ export default function Generate(props) {
   const prevNCategories = useRef();
 
   useEffect(() => {
-    {
-      if (checkNumber(nCategories, 2, 6, setNCategories, prevNCategories.current)) {
-        console.log(`nCategories: ${nCategories}`);
-        props.paramsChangedFunc(nCategories, nItems);
-      }
+    if (checkNumber(nCategories, 2, 6, setNCategories, prevNCategories.current)) {
+      console.log(`nCategories: ${nCategories}`);
+      props.paramsChangedFunc(nCategories, nItems);
     }
     prevNCategories.current = nCategories;
   }, [nCategories]);
@@ -28,9 +27,9 @@ export default function Generate(props) {
   const prevNItems = useRef();
 
   useEffect(() => {
-    if (checkNumber(nItems, 1, 10, setNItems, prevNItems.current)) {
-      props.paramsChangedFunc(nCategories, nItems);
-    }
+    // if (checkNumber(nItems, 1, 10, setNItems, prevNItems.current)) {
+    //   props.paramsChangedFunc(nCategories, nItems);
+    // }
     prevNItems.current = nItems;
   }, [nItems]);
 
@@ -38,6 +37,7 @@ export default function Generate(props) {
     <section className="generate">
       <div>
         <Button variant="info">Generate</Button>
+        <TotalPrice items={props.items} />
       </div>
       <div className="generate_sets">
         <label for="total_price" variant="success">Set Total Price </label>

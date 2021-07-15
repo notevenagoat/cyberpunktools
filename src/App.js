@@ -4,7 +4,7 @@ import Category from './Category';
 import Footer from './Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { categorySelector } from './randomgen';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 function App() {
   const [items, setItems] = useState(categorySelector(1));
@@ -13,6 +13,7 @@ function App() {
     return Math.floor((Math.random() * number) +1);
   }
 
+
   const categoriesChanged = (nCategories, nItems) => setItems(categorySelector(nCategories, nItems));
 
   getRandom(100);
@@ -20,7 +21,7 @@ function App() {
   return (
     <div>
       <Header />
-      <Generate paramsChangedFunc={categoriesChanged} />
+      <Generate paramsChangedFunc={categoriesChanged} items={items} />
       <Category items={items} />
       <Footer />
     </div>
