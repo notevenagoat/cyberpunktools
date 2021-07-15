@@ -4,7 +4,7 @@ import Category from './Category';
 import Footer from './Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { categorySelector } from './randomgen';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 function App() {
   const [items, setItems] = useState(categorySelector(1));
