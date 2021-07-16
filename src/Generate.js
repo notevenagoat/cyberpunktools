@@ -20,7 +20,9 @@ export default function Generate(props) {
 
   useEffect(() => {
     console.log('useEffect...');
-    if (checkNumber(nCategories, 2, 6, setNCategories, prevNCategories.current)) {
+    const nCatsOkay = checkNumber(nCategories, 2, 6, setNCategories, prevNCategories.current);
+    const nItemsOkay = checkNumber(nItems, 1, 10, setNItems, prevNItems.current);
+    if (nCatsOkay && nItemsOkay) {
       console.log(`nCategories: ${nCategories}`);
       props.paramsChangedFunc(nCategories, nItems);
     }
