@@ -23,13 +23,18 @@ text-align: center;
  /* color: rgb(232, 227, 227); */
 }
 
-.generate_sets>input {
- margin: .3em;
+.generate_sets>input{
+  margin: .3em;
 }
 
  .table_div {
    width: 100%;
-   margin: 2rem auto;
+   margin: 2rem;
+   /* display: flex; */
+   display: grid;
+   gap: 1rem;
+   grid-template-columns:repeat(3,1fr);
+   justify-content: center;
 }
   /*
   display: flex;
@@ -47,10 +52,16 @@ text-align: center;
   border: 1px solid #4287f5;
   text-align: center;
   }  */
-
-
+  
 footer{
   text-align: center;
   margin: 2rem 3rem;
   color: rgb(232, 227, 227);
+}
+
+@media only screen and (max-width:600px){
+  .table_div{
+    grid-template-columns: repeat(auto-fit,minmax(14rem,16rem));
+  }
+  
 }

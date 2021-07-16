@@ -5,7 +5,7 @@ import { Table } from 'react-bootstrap';
 
 export default function Category(props) {
     return (
-    <div className=" table_div">
+    <div className="table_div">
         {props.items.map(item => (
           <div className="m-4" md="auto">
             <h4>{item.categoryTitle}</h4>
