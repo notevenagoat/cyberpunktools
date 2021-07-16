@@ -25,6 +25,7 @@ text-align: center;
 
 .generate_sets>input{
   margin: .3em;
+  
 }
 
  .table_div {
@@ -63,5 +64,16 @@ footer{
   .table_div{
     grid-template-columns: repeat(auto-fit,minmax(14rem,16rem));
   }
-  
+  .generate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .generate_sets{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* width: 40%; */
+  }
 }
