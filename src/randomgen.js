@@ -1,7 +1,7 @@
 import { marketCategories } from "./components/cprmarketdata.js";
 
 
-const categoryNames = ['Weapons', 'Foods and Drugs', 'Cyberware', 'Electronics', 'Clothes', 'Surival'];
+const categoryNames = ['Weapons', 'Foods and Drugs', 'Cyberware', 'Electronics', 'Clothes', 'Survival'];
 
 const randInt = (maxExcl, min = 0) => Math.floor(Math.random() * (maxExcl - min)) + min;
 const shuffleArrayCopy = (arr) => [...arr].reduce((acc, x) => Math.random() > 0.5 ? [...acc, x] : [x, ...acc], []);

@@ -7,7 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
   /* background:no-repeat center/100% url('./abstract.png')  ; */
-  background: linear-gradient(0.25turn, #8e7daf, #758dcb, #ae865c);
+  background: linear-gradient(0.25turn, #000000, #5e214c, #f60000);
 }
 
 code {
