@@ -9,7 +9,7 @@ export default function Category(props) {
         {props.items.map(item => (
           <div className="m-4" md="auto">
             <h4>{item.categoryTitle}</h4>
-            <Table responsive striped bordered hover>
+            <Table variant="dark" responsive striped bordered hover>
               <tbody>
     
                 {item.list.map(item => <MarketItem name={item.name} price={item.price} />)}

@@ -30,13 +30,15 @@ export default function Generate(props) {
 
   return (
     <section className="d-flex generate">
-      <div>
-        <Button variant="dark">Generate</Button>{''}
+      <div style={{ color: 'white' }}> 
+        {/* <Button variant="dark">Generate</Button>{''} */}
         <TotalPrice items={props.items} />
       </div>
-      <div className="generate_sets">
-        <label for="total_price" variant="success">Set Total Price </label>
+      <div style={{ color: 'white' }} className="generate_sets" >
+      <div></div>
+        <label for="total_price" variant="success">Set Total Price </label> 
         <input name="total_price" id="total_price"></input>
+   
         <label for="categories">Set Categories </label>
         <input name="categories" id="categories" value={nCategories} onChange={e => setNCategories(e.target.value)}></input>
         <label for="items">Set Min/Max Items</label>
