@@ -6,7 +6,7 @@ import { shuffleArrayCopy } from '../randomgen'
 const clothingStyles = ['Bag Lady Chic', 'Gang Colors', 'Generic Chic', 'Bohemian', 'Leisurewear', 'Nomad Leathers', 'Asia Pop', 'Urban Flash', 'Businesswear'];
 
 const generateSeason = () => {
-  return shuffleArrayCopy([...clothingStyles]).slice(0, 8);
+  return shuffleArrayCopy([...clothingStyles]).slice(0, 7);
 }
 
 export class FashionGenerator extends Component {
@@ -19,9 +19,10 @@ export class FashionGenerator extends Component {
 
   seasonsJSX = () => {
     console.log('test');
-    return this.state.seasons.map(season => {
+    return this.state.seasons.map((season, i) => {
       return (
         <tr>
+          <td>{i+1}</td>
           {season.map(item => <td>{item}</td>)}
         </tr>
       )
