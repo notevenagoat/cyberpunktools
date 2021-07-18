@@ -23,6 +23,11 @@ text-align: center;
  /* color: rgb(232, 227, 227); */
 }
 
+.generate_sets {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
 .generate_sets>input{
   margin: .3em;
   

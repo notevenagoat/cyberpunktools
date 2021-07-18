@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { categorySelector } from './randomgen';
 import { useState } from 'react';
 import { Container, Row } from 'react-bootstrap';
+import FashionGenerator from './fashion/FashionGenerator';
 
 function App() {
   const [items, setItems] = useState([]);
@@ -32,6 +33,7 @@ function App() {
       <Row>
       <Footer />
       </Row>
+      <FashionGenerator />
     </Container>
   );
 }
