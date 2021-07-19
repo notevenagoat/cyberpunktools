@@ -30,14 +30,12 @@ export class FashionGenerator extends Component {
     console.log("test");
     return this.state.seasons.map((season, i) => {
       return (
-        <div>
-          <tr>
-            <td>{i + 1}</td>
-            {season.map((item) => (
-              <td>{item}</td>
-            ))}
-          </tr>
-        </div>
+        <tr>
+          <td>{i + 1}</td>
+          {season.map((item) => (
+            <td>{item}</td>
+          ))}
+        </tr>
       );
     });
   };
