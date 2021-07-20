@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/cyberpunktools/static/css/main.61ca101d.chunk.css",
-    "main.js": "/cyberpunktools/static/js/main.ba5e5606.chunk.js",
-    "main.js.map": "/cyberpunktools/static/js/main.ba5e5606.chunk.js.map",
+    "main.js": "/cyberpunktools/static/js/main.adc9777d.chunk.js",
+    "main.js.map": "/cyberpunktools/static/js/main.adc9777d.chunk.js.map",
     "runtime-main.js": "/cyberpunktools/static/js/runtime-main.08ef9e0a.js",
     "runtime-main.js.map": "/cyberpunktools/static/js/runtime-main.08ef9e0a.js.map",
     "static/css/2.4be38407.chunk.css": "/cyberpunktools/static/css/2.4be38407.chunk.css",
@@ -18,6 +18,6 @@
     "static/css/2.4be38407.chunk.css",
     "static/js/2.00531424.chunk.js",
     "static/css/main.61ca101d.chunk.css",
-    "static/js/main.ba5e5606.chunk.js"
+    "static/js/main.adc9777d.chunk.js"
   ]
 }
