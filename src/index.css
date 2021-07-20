@@ -1,10 +1,57 @@
 body {
-  background-color: red !important;
+    background-color: black !important;
 }
 
 header {
-  background-color: black;
-  height: 200px;
-  text-align: center;
+    background-color: black;
+    height: 200px;
+    text-align: center;
+    color: white;
+}
+
+ header >h1{
+    padding: 2rem;
+    border-bottom: 2px solid white;
+}
+
+h1>span {
+    color: red;
+}
+
+.nav_flex {
+   color: red !important;
+   text-decoration: none;
+
+}
+
+.nav_flex:hover {
+    color: white !important;
+        text-decoration: none;
+       
+ 
+ }
+
+
+.main-container {
+  background-color: #690000;
   color: white;
+  max-width: 95%;
+  padding: 2rem 0;
+}
+
+.generate_sets {
+  display: grid;
+  grid-template-columns: auto 1;
+  grid-template-rows: 1 1;
+
+}
+
+.generate_sets * {
+  margin-right: 1rem;
+}
+
+.home-container,
+.about-container,
+.contact-container {
+  min-height: 60vh;
 }
