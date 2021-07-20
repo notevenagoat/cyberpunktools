@@ -1,4 +1,4 @@
-import { marketCategories } from "./components/cprmarketdata.js";
+import { marketCategories } from "./market/cprmarketdata.js";
 
 
 const categoryNames = ['Weapons', 'Foods and Drugs', 'Cyberware', 'Electronics', 'Clothes', 'Survival'];

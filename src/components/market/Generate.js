@@ -42,10 +42,11 @@ export default function Generate(props) {
   }, [nCategories, nItems]);
 
   return (
+
     <div>
       <section className="d-flex generate">
         <div>
-          <Button variant="dark">Generate</Button>
+          {/* <Button variant="dark">Generate</Button> */}
           {""}
           <TotalPrice items={props.items} />
         </div>
@@ -80,5 +81,6 @@ export default function Generate(props) {
         <Category items={props.items} />
       </section>
     </div>
+    
   );
 }
