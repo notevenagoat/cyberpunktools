@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 
 const Navigation = () => {
   return (
-    <Container>
+    <div>
       <Header />
-    </Container>
+    </div>
   );
 };
 

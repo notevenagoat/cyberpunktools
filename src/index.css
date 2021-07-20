@@ -7,7 +7,6 @@ header {
     height: 200px;
     text-align: center;
     color: white;
-    border-bottom: 2px solid rgba(226, 228, 232, 0.775);
 }
 
  header >h1{
@@ -19,18 +18,19 @@ h1>span {
     color: red;
 }
 
-
 .nav_flex {
    color: red !important;
    text-decoration: none;
 
 }
 
+.nav_flex:hover {
+    color: white !important;
+        text-decoration: none;
+       
+ 
+ }
 
-
-
-
-}
 
 .main-container {
   background-color: #690000;
