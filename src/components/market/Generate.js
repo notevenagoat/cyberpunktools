@@ -44,10 +44,8 @@ export default function Generate(props) {
   return (
 
     <div>
-      <section className="d-flex generate">
+      <section className="d-flex">
         <div>
-          {/* <Button variant="dark">Generate</Button> */}
-          {""}
           <TotalPrice items={props.items} />
         </div>
         <div className="generate_sets">

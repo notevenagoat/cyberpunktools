@@ -7,4 +7,36 @@ header {
     height: 200px;
     text-align: center;
     color: white;
+    border-bottom: 2px solid rgba(226, 228, 232, 0.775);
 }
+
+ h1{
+    padding: 2rem;
+    border-bottom: 2px solid white;
+}
+
+h1>span {
+    color: red;
+}
+
+
+.nav_flex {
+   color: red !important;
+   text-decoration: none;
+
+}
+
+.flex_nav{
+    /* background-color: yellow; */
+    display: flex ;
+    /* flex-direction: column; */
+    justify-content: center ;
+    align-content: center;
+}
+
+.generate_sets{
+    
+    margin: auto 8rem;
+}
+
+
