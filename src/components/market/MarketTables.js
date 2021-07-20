@@ -3,7 +3,7 @@ import React from 'react';
 import MarketItem from './MarketItem';
 import { Table } from 'react-bootstrap';
 
-export default function Category(props) {
+export default function MarketTables(props) {
     return (
     <div className="table_div">
         {props.items.map(item => (

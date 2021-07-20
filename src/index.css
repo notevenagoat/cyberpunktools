@@ -19,3 +19,9 @@ header {
 .generate_sets * {
   margin-right: 1rem;
 }
+
+.home-container,
+.about-container,
+.contact-container {
+  min-height: 60vh;
+}

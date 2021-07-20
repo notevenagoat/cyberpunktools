@@ -2,9 +2,9 @@ import Header from "./uicomponents/Header";
 import Footer from "./uicomponents/Footer";
 import Navigation from "./uicomponents/NavBar";
 import About from "./uicomponents/About";
+import Home from "./uicomponents/Home";
 
 import NightMarket from "./components/market/NightMarket";
-import Category from "./components/market/Category";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import { categorySelector } from "./components/randomgen";
@@ -47,6 +47,7 @@ function App() {
 
           <Route path="/fashion_generator" component={FashionGenerator} />
           <Route path="/about" component={About} />
+          <Route path="/home" component={Home} />
         </Container>
       </Switch>
     </Router>

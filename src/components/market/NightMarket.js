@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Button } from "react-bootstrap";
 import TotalPrice from "./TotalPrice";
-import Category from "./Category";
+import MarketTables from "./MarketTables";
 
 const checkNumber = (input, min, max, setter, _default) => {
   if (isNaN(input)) setter(_default);
@@ -70,7 +70,7 @@ export default function NightMarket(props) {
         </div>
       </section>
       <section>
-        <Category items={props.items} />
+        <MarketTables items={props.items} />
       </section>
       <div>
         {/* <Button variant="dark">Generate</Button> */}
