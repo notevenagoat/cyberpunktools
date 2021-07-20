@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Button } from "react-bootstrap";
 import TotalPrice from "./TotalPrice";
-import Category from "./Category";
+import MarketTables from "./MarketTables";
 
 const checkNumber = (input, min, max, setter, _default) => {
   if (isNaN(input)) setter(_default);
@@ -10,7 +10,7 @@ const checkNumber = (input, min, max, setter, _default) => {
   return !(isNaN(input) || input > max || input < min);
 };
 
-export default function Generate(props) {
+export default function NightMarket(props) {
   const [nCategories, setNCategories] = useState(2);
   const prevNCategories = useRef();
 
@@ -45,12 +45,8 @@ export default function Generate(props) {
 
     <div>
       <h1>Night Market Generator</h1>
-      <section className="d-flex generate">
+      <section className="d-flex generate justify-content-end">
         <div className="generate_sets">
-          <label for="total_price" variant="success">
-            Set Total Price{" "}
-          </label>
-          <input name="total_price" id="total_price"></input>
           <label for="categories">Set Categories </label>
           <input
             type="number"
@@ -61,7 +57,7 @@ export default function Generate(props) {
             max="6"
             onChange={(e) => setNCategories(e.target.value)}
           ></input>
-          <label for="items">Set Min/Max Items</label>
+          <label for="items" className="mt-2">Set Min/Max Items</label>
           <input
             type="number"
             min="1"
@@ -74,7 +70,7 @@ export default function Generate(props) {
         </div>
       </section>
       <section>
-        <Category items={props.items} />
+        <MarketTables items={props.items} />
       </section>
       <div>
         {/* <Button variant="dark">Generate</Button> */}

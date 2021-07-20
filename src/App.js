@@ -2,9 +2,9 @@ import Header from "./uicomponents/Header";
 import Footer from "./uicomponents/Footer";
 import Navigation from "./uicomponents/NavBar";
 import About from "./uicomponents/About";
+import Home from "./uicomponents/Home";
 
-import Generate from "./components/market/Generate";
-import Category from "./components/market/Category";
+import NightMarket from "./components/market/NightMarket";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import { categorySelector } from "./components/randomgen";
@@ -30,13 +30,13 @@ function App() {
     <Router>
       <Navigation />
       <Switch>
-        <Container>
+        <Container fluid className="main-container">
 
             <Route
               path="/night_market"
               render={(props) => (
 
-                <Generate
+                <NightMarket
                   {...props}
                   paramsChangedFunc={categoriesChanged}
                   items={items}
@@ -47,6 +47,7 @@ function App() {
 
           <Route path="/fashion_generator" component={FashionGenerator} />
           <Route path="/about" component={About} />
+          <Route path="/home" component={Home} />
         </Container>
       </Switch>
     </Router>
