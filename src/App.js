@@ -3,7 +3,7 @@ import Footer from "./uicomponents/Footer";
 import Navigation from "./uicomponents/NavBar";
 import About from "./uicomponents/About";
 
-import Generate from "./components/market/Generate";
+import NightMarket from "./components/market/NightMarket";
 import Category from "./components/market/Category";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -30,13 +30,13 @@ function App() {
     <Router>
       <Navigation />
       <Switch>
-        <Container>
+        <Container fluid className="main-container">
 
             <Route
               path="/night_market"
               render={(props) => (
 
-                <Generate
+                <NightMarket
                   {...props}
                   paramsChangedFunc={categoriesChanged}
                   items={items}

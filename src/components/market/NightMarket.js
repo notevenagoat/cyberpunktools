@@ -10,7 +10,7 @@ const checkNumber = (input, min, max, setter, _default) => {
   return !(isNaN(input) || input > max || input < min);
 };
 
-export default function Generate(props) {
+export default function NightMarket(props) {
   const [nCategories, setNCategories] = useState(2);
   const prevNCategories = useRef();
 
@@ -47,10 +47,6 @@ export default function Generate(props) {
       <h1>Night Market Generator</h1>
       <section className="d-flex generate">
         <div className="generate_sets">
-          <label for="total_price" variant="success">
-            Set Total Price{" "}
-          </label>
-          <input name="total_price" id="total_price"></input>
           <label for="categories">Set Categories </label>
           <input
             type="number"

@@ -1,5 +1,5 @@
 body {
-    background-color: red !important;
+    background-color: black !important;
 }
 
 header {
@@ -7,4 +7,15 @@ header {
     height: 200px;
     text-align: center;
     color: white;
+}
+
+.main-container {
+  background-color: #690000;
+  color: white;
+  max-width: 95%;
+  padding: 2rem 0;
+}
+
+.generate_sets * {
+  margin-right: 1rem;
 }
