@@ -30,23 +30,24 @@ function App() {
     <Router>
       <Navigation />
       <Switch>
-        <Row>
-          <Route
-            path="/night_market"
-            render={(props) => (
-           
-              <Generate
-                {...props}
-                paramsChangedFunc={categoriesChanged}
-                items={items}
-              />
-          
-            )}
-          />
-          
+        <Container>
+
+            <Route
+              path="/night_market"
+              render={(props) => (
+
+                <Generate
+                  {...props}
+                  paramsChangedFunc={categoriesChanged}
+                  items={items}
+                />
+
+              )}
+            />
+
           <Route path="/fashion_generator" component={FashionGenerator} />
           <Route path="/about" component={About} />
-        </Row>
+        </Container>
       </Switch>
     </Router>
   );
