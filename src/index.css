@@ -10,7 +10,7 @@ header {
     border-bottom: 2px solid rgba(226, 228, 232, 0.775);
 }
 
- h1{
+ header >h1{
     padding: 2rem;
     border-bottom: 2px solid white;
 }
