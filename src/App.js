@@ -1,15 +1,18 @@
-import Header from "./Header";
-import Generate from "./Generate";
-import Category from "./Category";
-import Footer from "./Footer";
+import Header from "./uicomponents/Header";
+import Footer from "./uicomponents/Footer";
+import Navigation from "./uicomponents/NavBar";
+import About from "./uicomponents/About";
+
+import Generate from "./components/market/Generate";
+import Category from "./components/market/Category";
+
 import "bootstrap/dist/css/bootstrap.min.css";
-import { categorySelector } from "./randomgen";
+import { categorySelector } from "./components/randomgen";
 import { useState } from "react";
 import { Container, Row } from "react-bootstrap";
-import FashionGenerator from "./fashion/FashionGenerator";
+import FashionGenerator from "./components/fashion/FashionGenerator";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Navigation from "./components/NavBar";
-import About from "./components/About";
+
 
 function App() {
   const [items, setItems] = useState([]);
@@ -31,11 +34,13 @@ function App() {
           <Route
             path="/night_market"
             render={(props) => (
+           
               <Generate
                 {...props}
                 paramsChangedFunc={categoriesChanged}
                 items={items}
               />
+          
             )}
           />
           
