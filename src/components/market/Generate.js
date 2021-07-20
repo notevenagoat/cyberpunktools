@@ -44,12 +44,8 @@ export default function Generate(props) {
   return (
 
     <div>
+      <h1>Night Market Generator</h1>
       <section className="d-flex generate">
-        <div>
-          {/* <Button variant="dark">Generate</Button> */}
-          {""}
-          <TotalPrice items={props.items} />
-        </div>
         <div className="generate_sets">
           <label for="total_price" variant="success">
             Set Total Price{" "}
@@ -80,7 +76,12 @@ export default function Generate(props) {
       <section>
         <Category items={props.items} />
       </section>
+      <div>
+        {/* <Button variant="dark">Generate</Button> */}
+        {""}
+        <TotalPrice items={props.items} />
+      </div>
     </div>
-    
+
   );
 }
