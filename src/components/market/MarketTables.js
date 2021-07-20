@@ -1,22 +1,24 @@
 
 import React from 'react';
 import MarketItem from './MarketItem';
-import { Table } from 'react-bootstrap';
+import { Table, Row, Col } from 'react-bootstrap';
 
 export default function MarketTables(props) {
-    return (
+  return (
     <div className="table_div">
+      <Row>
         {props.items.map(item => (
-          <div className="m-4" md="auto">
+          <Col sm={6} xl={4} xxl={3} className="my-4">
             <h4>{item.categoryTitle}</h4>
             <Table variant="dark" responsive striped bordered hover>
               <tbody>
-    
+
                 {item.list.map(item => <MarketItem name={item.name} price={item.price} />)}
-              </tbody>    
+              </tbody>
             </Table>
-          </div>
+          </Col>
         ))}
+      </Row>
     </div>
-)
+  )
 }

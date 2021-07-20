@@ -45,7 +45,7 @@ export default function NightMarket(props) {
 
     <div>
       <h1>Night Market Generator</h1>
-      <section className="d-flex generate">
+      <section className="d-flex generate justify-content-end">
         <div className="generate_sets">
           <label for="categories">Set Categories </label>
           <input
@@ -57,7 +57,7 @@ export default function NightMarket(props) {
             max="6"
             onChange={(e) => setNCategories(e.target.value)}
           ></input>
-          <label for="items">Set Min/Max Items</label>
+          <label for="items" className="mt-2">Set Min/Max Items</label>
           <input
             type="number"
             min="1"

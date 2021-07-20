@@ -16,6 +16,13 @@ header {
   padding: 2rem 0;
 }
 
+.generate_sets {
+  display: grid;
+  grid-template-columns: auto 1;
+  grid-template-rows: 1 1;
+
+}
+
 .generate_sets * {
   margin-right: 1rem;
 }
