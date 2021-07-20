@@ -25,7 +25,7 @@ function App() {
 
   return (
     <Router>
-      <Navigation />
+      <Header />
       <Switch>
         <Row>
           <Route
@@ -38,7 +38,7 @@ function App() {
               />
             )}
           />
-          
+          <Route path="/" exact component={home} />
           <Route path="/fashion_generator" component={FashionGenerator} />
           <Route path="/about" component={About} />
         </Row>
@@ -49,3 +49,12 @@ function App() {
 
 export default App;
 
+const home = () => {
+  return (
+    <div>
+      <Container>
+        <h1>HOME PAGE</h1>
+      </Container>
+    </div>
+  );
+};

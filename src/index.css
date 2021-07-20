@@ -1,10 +1,10 @@
 body {
-    background-color: red !important;
+  background-color: red !important;
 }
 
 header {
-    background-color: black;
-    height: 200px;
-    text-align: center;
-    color: white;
+  background-color: black;
+  height: 200px;
+  text-align: center;
+  color: white;
 }
