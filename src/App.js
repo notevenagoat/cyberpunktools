@@ -27,9 +27,6 @@ function App() {
     <Router>
       <Navigation />
       <Switch>
-        {/* <Row>
-          <Route path="/home" component={Header} />
-        </Row> */}
         <Row>
           <Route
             path="/night_market"
@@ -41,31 +38,14 @@ function App() {
               />
             )}
           />
-          <Route path="/home" component={Header} />
+          
           <Route path="/fashion_generator" component={FashionGenerator} />
           <Route path="/about" component={About} />
         </Row>
       </Switch>
-      {/* <Container>
-        <Row>
-          <Navigation />
-        </Row>
-        <Row>
-          <Header />
-        </Row>
-        <Row>
-          <Generate paramsChangedFunc={categoriesChanged} items={items} />
-        </Row>
-        <Row>
-          <Category items={items} />
-        </Row>
-        <Row>
-          <Footer />
-        </Row>
-        <FashionGenerator />
-      </Container> */}
     </Router>
   );
 }
 
 export default App;
+
