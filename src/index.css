@@ -26,7 +26,9 @@ h1>span {
 
 }
 
-
+.nav_flex:hover{
+    color: rgb(167, 149, 149) !important;
+}
 
 
 
