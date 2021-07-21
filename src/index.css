@@ -71,6 +71,9 @@ h1>span {
 .dropdown-toggle {
   color:red !important;
 }
+.dropdown-toggle:hover {
+  color:white !important;
+}
 
 .dropdown-menu {
   background-color: black !important;
@@ -78,3 +81,26 @@ h1>span {
   margin-bottom: 0px;
 }
 
+.card {
+  width: 95% !important;
+  padding: 5px;
+
+}
+
+.card img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  text-align: center;
+ max-width: 500px !important;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  -webkit-border-radius: 50%; 
+  border-radius: 50% !important;
+}
+
+.card img:hover {
+  filter: grayscale(0%) !important;
+  background-color: #EBEFF7;
+}
