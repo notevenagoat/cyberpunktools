@@ -32,7 +32,7 @@ function App() {
       <Switch>
         <Container fluid className="main-container">
           <Route
-            path="/night_market"
+            path="/cyberpunktools/night_market"
             render={(props) => (
               <NightMarket
                 {...props}
