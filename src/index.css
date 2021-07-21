@@ -55,3 +55,15 @@ h1>span {
 .contact-container {
   min-height: 60vh;
 }
+
+.icon {
+  color: white;
+  margin: 1rem;
+  transform: scale(1);
+  transition: all 0.2s;
+}
+
+.icon:hover {
+  color: white;
+  transform: scale(1.5);
+}
