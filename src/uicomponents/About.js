@@ -1,5 +1,4 @@
 import React from "react";
-<<<<<<< HEAD
 import PersonalCard from "./PersonalCard";
 import { linkedin, github, facebook } from "./Icons"
 import { Row, Col } from 'react-bootstrap'
@@ -35,9 +34,6 @@ const people = [
   },
 ]
 
-=======
-import { Card } from "react-bootstrap";
->>>>>>> 430970a4c60c6053761c6cea897253f08bb65d18
 const About = () => {
   return (
     <div className="about-container" >
