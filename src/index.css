@@ -67,3 +67,14 @@ h1>span {
   color: white;
   transform: scale(1.5);
 }
+
+.dropdown-toggle {
+  color:red !important;
+}
+
+.dropdown-menu {
+  background-color: black !important;
+  border: 1px solid red !important;
+  margin-bottom: 0px;
+}
+

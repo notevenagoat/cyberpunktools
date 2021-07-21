@@ -14,29 +14,32 @@ export default function Header() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="m-auto">
               <Nav.Link>
-                <Link className="nav_flex" to="/">
+                <Link className="nav_flex" to="/cyberpunktools/">
                   Home
                 </Link>
               </Nav.Link>
               <NavDropdown title="Tools" id="basic-nav-dropdown">
                 <NavDropdown.Item>
-                  <Link className="nav_flex" to="/night_market">
+                  <Link className="nav_flex" to="/cyberpunktools/night_market">
                     Night Market
                   </Link>
                 </NavDropdown.Item>
                 <NavDropdown.Item>
-                  <Link className="nav_flex" to="/fashion_generator">
+                  <Link
+                    className="nav_flex"
+                    to="/cyberpunktools/fashion_generator"
+                  >
                     Fashion Generator
                   </Link>
                 </NavDropdown.Item>
               </NavDropdown>
               <Nav.Link>
-                <Link className="nav_flex" to="/about">
+                <Link className="nav_flex" to="/cyberpunktools/about">
                   About Us
                 </Link>
               </Nav.Link>
               <Nav.Link>
-                <Link className="nav_flex" to="/contact">
+                <Link className="nav_flex" to="/cyberpunktools/contact">
                   Contact
                 </Link>
               </Nav.Link>
