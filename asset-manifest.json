@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/cyberpunktools/static/css/main.0622fa33.chunk.css",
-    "main.js": "/cyberpunktools/static/js/main.eb3c8715.chunk.js",
-    "main.js.map": "/cyberpunktools/static/js/main.eb3c8715.chunk.js.map",
+    "main.js": "/cyberpunktools/static/js/main.9f671fca.chunk.js",
+    "main.js.map": "/cyberpunktools/static/js/main.9f671fca.chunk.js.map",
     "runtime-main.js": "/cyberpunktools/static/js/runtime-main.08ef9e0a.js",
     "runtime-main.js.map": "/cyberpunktools/static/js/runtime-main.08ef9e0a.js.map",
     "static/css/2.4be38407.chunk.css": "/cyberpunktools/static/css/2.4be38407.chunk.css",
-    "static/js/2.00531424.chunk.js": "/cyberpunktools/static/js/2.00531424.chunk.js",
-    "static/js/2.00531424.chunk.js.map": "/cyberpunktools/static/js/2.00531424.chunk.js.map",
+    "static/js/2.a5c49a86.chunk.js": "/cyberpunktools/static/js/2.a5c49a86.chunk.js",
+    "static/js/2.a5c49a86.chunk.js.map": "/cyberpunktools/static/js/2.a5c49a86.chunk.js.map",
     "index.html": "/cyberpunktools/index.html",
     "static/css/2.4be38407.chunk.css.map": "/cyberpunktools/static/css/2.4be38407.chunk.css.map",
     "static/css/main.0622fa33.chunk.css.map": "/cyberpunktools/static/css/main.0622fa33.chunk.css.map",
-    "static/js/2.00531424.chunk.js.LICENSE.txt": "/cyberpunktools/static/js/2.00531424.chunk.js.LICENSE.txt"
+    "static/js/2.a5c49a86.chunk.js.LICENSE.txt": "/cyberpunktools/static/js/2.a5c49a86.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.08ef9e0a.js",
     "static/css/2.4be38407.chunk.css",
-    "static/js/2.00531424.chunk.js",
+    "static/js/2.a5c49a86.chunk.js",
     "static/css/main.0622fa33.chunk.css",
-    "static/js/main.eb3c8715.chunk.js"
+    "static/js/main.9f671fca.chunk.js"
   ]
 }
