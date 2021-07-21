@@ -45,7 +45,7 @@ export default function NightMarket(props) {
 
     <div>
       <h1>Night Market Generator</h1>
-      <section className="d-flex generate justify-content-end">
+      <section className="d-flex generate justify-content-start">
         <div className="generate_sets">
           <label for="categories">Set Categories </label>
           <input

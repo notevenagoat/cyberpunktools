@@ -3,7 +3,6 @@ import Footer from "./uicomponents/Footer";
 import Navigation from "./uicomponents/NavBar";
 import About from "./uicomponents/About";
 import Home from "./uicomponents/Home";
-import Contact from "./uicomponents/Contact";
 
 import NightMarket from "./components/market/NightMarket";
 
