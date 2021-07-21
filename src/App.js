@@ -42,10 +42,13 @@ function App() {
             )}
           />
 
-          <Route path="/fashion_generator" component={FashionGenerator} />
-          <Route path="/about" component={About} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/" exact component={Home} />
+          <Route
+            path="/cyberpunktools/fashion_generator"
+            component={FashionGenerator}
+          />
+          <Route path="/cyberpunktools/about" component={About} />
+          <Route path="/cyberpunktools/contact" component={Contact} />
+          <Route path="/cyberpunktools/" exact component={Home} />
         </Container>
       </Switch>
     </Router>
@@ -53,13 +56,3 @@ function App() {
 }
 
 export default App;
-
-const home = () => {
-  return (
-    <div>
-      <Container>
-        <h1>HOME PAGE</h1>
-      </Container>
-    </div>
-  );
-};
