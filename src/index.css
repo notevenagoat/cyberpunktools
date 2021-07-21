@@ -55,3 +55,14 @@ h1>span {
 .contact-container {
   min-height: 60vh;
 }
+
+.dropdown-toggle {
+  color:red !important;
+}
+
+.dropdown-menu {
+  background-color: black !important;
+  border: 1px solid red !important;
+  margin-bottom: 0px;
+}
+
