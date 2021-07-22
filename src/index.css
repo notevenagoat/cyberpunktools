@@ -83,14 +83,16 @@ h1>span {
 
 .card {
   width: 95% !important;
-  padding: 5px;
-
+  padding-top: 2rem;
+  
 }
 
 .card img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+
+
   width: 50%;
   text-align: center;
  max-width: 500px !important;
@@ -103,4 +105,8 @@ h1>span {
 .card img:hover {
   filter: grayscale(0%) !important;
   background-color: #EBEFF7;
+}
+
+.home-container h3 {
+  margin-top: 1.5rem;
 }
