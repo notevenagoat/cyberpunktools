@@ -1,7 +1,8 @@
 import React from "react";
 import PersonalCard from "./PersonalCard";
-import { linkedin, github, facebook } from "./Icons"
-import { Row, Col } from 'react-bootstrap'
+import { linkedin, github, facebook } from "./Icons";
+import { Row, Col } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 
 const people = [
   {
@@ -38,6 +39,7 @@ const people = [
 const About = () => {
   return (
     <div className="about-container" >
+      <Container>
       <p>We are a group of 4 developers who graduated  in July 2021 from the same Web Developer coding bootcamp, but we love working together and decided to create this project to stay in touch, practice and share all the new things we learn as we dive into our new careers!. Connect with us on Linkedin and/or follow our Github to see what other craziness we get up to!.</p>
       <Row>
         {people.map(person =>
@@ -53,6 +55,7 @@ const About = () => {
           </Col>
         )}
       </Row>
+      </Container>
     </div>
   );
 };
