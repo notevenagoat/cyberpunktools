@@ -9,9 +9,11 @@ function PersonalCard(props) {
         <Card.Title>{props.name}</Card.Title>
         <Card.Text className="people-text">
           {props.description}
-        </Card.Text>
-        <Card.Link href={props.link1.url} target="_blank" className="text-white">{props.link1.icon}</Card.Link>
+          <br /><br /> <span className="quote-text"> {props.quote} </span>
+        </Card.Text><div className="our-icons">
+        <Card.Link href={props.link1.url} target="_blank" className="text-white ">{props.link1.icon}</Card.Link>
         <Card.Link href={props.link2.url} target="_blank" className="text-white">{props.link2.icon}</Card.Link>
+        </div>
       </Card.Body>
     </Card>
   )

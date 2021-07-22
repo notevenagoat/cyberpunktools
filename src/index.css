@@ -36,12 +36,21 @@ h1>span {
 
 
 .main-container {
-  background-color: #690000;
+  background-color: #4d0000;
   color: white;
   max-width: 95%;
   padding: 2rem 0;
 }
 
+a:link, a:visited {
+  text-decoration: none;
+  color: rgb(187, 0, 0);
+  font-weight: 700;
+}
+
+a:hover {
+  color: white !important;
+}
 .generate_sets {
   display: grid;
   grid-template-columns: auto 1;
@@ -111,6 +120,10 @@ h1>span {
   background-color: #EBEFF7;
 }
 
+.quote-text {
+  font-style:italic;
+  font-size: 1rem;
+}
 .home-container h3 {
   margin-top: 1.5rem;
 }
