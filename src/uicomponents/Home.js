@@ -27,9 +27,9 @@ If you or your players own an AGENT, by RAW (Rules As Written) it can give you a
 
 In our homebrew, you only have to wear 6 out of all the pieces to get the +2 bonus, and if you only wear 3 of them, you still get a +1. We like to extend that bonus to any skill that involves social interaction, but that is up to the GM to incorporate.
 
-Combat Simulator (upcoming)
+<h3>Combat Simulator (upcoming)</h3>
 
-Want to know what percentage of headshotting that cyberpsycho is running toward from across the road? Did you miss your shot and want to know your percentage of surviving as he takes out his Wolvers and attempts to decapitate you? We got you covered.
+Want to know what percentage of headshotting that cyberpsycho is running toward from across the road? Did you miss your shot and want to know your percentage of surviving as he takes out his Wolvers and attempts to decapitate you? We got you covered.<br />
 
 <h3>Wait, what is this? </h3>
 

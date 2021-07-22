@@ -18,6 +18,9 @@ h1>span {
     color: red;
 }
 
+.navbar-nav {
+  background-color: black;
+}
 .nav_flex {
    color: red !important;
    text-decoration: none;
@@ -84,6 +87,7 @@ h1>span {
 .card {
   width: 95% !important;
   padding-top: 2rem;
+  max-width: 450px;
   
 }
 
@@ -109,4 +113,10 @@ h1>span {
 
 .home-container h3 {
   margin-top: 1.5rem;
+}
+
+.people-text {
+  text-align:center ;
+  font-size: 1rem ;
+  font-family:'Courier New', Courier, monospace;
 }

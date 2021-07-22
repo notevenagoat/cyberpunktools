@@ -7,7 +7,7 @@ function PersonalCard(props) {
       <Card.Img variant="top" src={props.imageSource} />
       <Card.Body>
         <Card.Title>{props.name}</Card.Title>
-        <Card.Text>
+        <Card.Text className="people-text">
           {props.description}
         </Card.Text>
         <Card.Link href={props.link1.url} target="_blank" className="text-white">{props.link1.icon}</Card.Link>
