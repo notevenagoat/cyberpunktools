@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Button } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import TotalPrice from "./TotalPrice";
 import MarketTables from "./MarketTables";
 
@@ -42,7 +43,7 @@ export default function NightMarket(props) {
   }, [nCategories, nItems]);
 
   return (
-
+    <Container>
     <div>
       <h1>Night Market Generator</h1>
       <section className="d-flex generate justify-content-start">
@@ -78,6 +79,6 @@ export default function NightMarket(props) {
         <TotalPrice items={props.items} />
       </div>
     </div>
-
+    </Container>
   );
 }

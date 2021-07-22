@@ -2,9 +2,11 @@
 import React from 'react';
 import MarketItem from './MarketItem';
 import { Table, Row, Col } from 'react-bootstrap';
+import { Container } from 'react-bootstrap'
 
 export default function MarketTables(props) {
   return (
+  
     <div className="table_div">
       <Row>
         {props.items.map(item => (
@@ -20,5 +22,6 @@ export default function MarketTables(props) {
         ))}
       </Row>
     </div>
+  
   )
 }

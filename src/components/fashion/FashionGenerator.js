@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Table, Button } from "react-bootstrap";
 import { shuffleArrayCopy } from "../randomgen";
+import { Container } from "react-bootstrap";
 
 const clothingStyles = [
   "Bag Lady Chic",
@@ -51,6 +52,7 @@ export class FashionGenerator extends Component {
 
   render() {
     return (
+      <Container>
       <React.Fragment>
         {/* className="table table-dark table-striped border-danger m-3" */}
         {/* style="max-width: 95%;" */}
@@ -90,6 +92,7 @@ export class FashionGenerator extends Component {
           </Button>
         </div>
       </React.Fragment>
+      </Container>
     );
   }
 }
