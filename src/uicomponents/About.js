@@ -35,7 +35,6 @@ const people = [
     link2: { icon: linkedin, url: "https://www.linkedin.com/in/yumeng-loh/" }
   },
 ]
-
 const About = () => {
   return (
     <div className="about-container" >
